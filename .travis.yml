@@ -18,5 +18,4 @@ deploy:
     local_dir: dist
     on:
       tags: true
-      branch: master
     tag: latest
