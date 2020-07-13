@@ -1,0 +1,43 @@
+{
+  "name": "commitlint-config-fa",
+  "version": "0.0.4",
+  "description": "Shareable commitlint config enforcing conventional commits",
+  "main": "index.js",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "npm:major": "npm version major",
+    "npm:minor": "npm version minor",
+    "npm:patch": "npm version patch",
+    "postversion": "git push --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kezhongfa/commitlint-config-fa.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kezhongfa/commitlint-config-fa/issues"
+  },
+  "homepage": "https://github.com/kezhongfa/commitlint-config-fa#readme",
+  "peerDependencies": {
+    "eslint": ">=6.8.0"
+  },
+  "author": {
+    "name": "kezhongfa",
+    "email": "kezhongfa@163.com"
+  },
+  "keywords": [
+    "conventional-changelog",
+    "commitlint",
+    "commitlint-config"
+  ],
+  "license": "ISC",
+  "bundleDependencies": false,
+  "dependencies": {
+    "conventional-changelog-conventionalcommits": "4.3.0"
+  },
+  "devDependencies": {
+    "shelljs": "^0.8.4"
+  }
+}

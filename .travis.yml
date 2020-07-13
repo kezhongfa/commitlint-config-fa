@@ -1,0 +1,22 @@
+#指定运行环境
+language: node_js
+#指定nodejs版本，可以指定多个
+node_js:
+  - 12
+
+#缓存
+cache:
+  directories:
+    - node_modules
+
+#发布
+deploy:
+  - provider: npm
+    email: kezhongfa@163.com
+    skip_cleanup: true
+    api_key: $NPM_API_KEY
+    local_dir: dist
+    on:
+      tags: true
+      branch: master
+    tag: latest
