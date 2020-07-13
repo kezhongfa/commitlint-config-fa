@@ -9,6 +9,10 @@ cache:
   directories:
     - node_modules
 
+#运行的脚本命令
+script:
+  - npm run publish:before
+
 #发布
 deploy:
   - provider: npm
