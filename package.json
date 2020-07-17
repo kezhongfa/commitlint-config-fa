@@ -1,6 +1,6 @@
 {
   "name": "commitlint-config-fa",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Shareable commitlint config enforcing conventional commits",
   "main": "index.js",
   "engines": {
