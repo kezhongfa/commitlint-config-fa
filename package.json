@@ -1,6 +1,6 @@
 {
   "name": "commitlint-config-fa",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Shareable commitlint config enforcing conventional commits",
   "main": "index.js",
   "engines": {
@@ -11,7 +11,7 @@
     "npm:major": "npm version major",
     "npm:minor": "npm version minor",
     "npm:patch": "npm version patch",
-    "postversion": "npm run publish && git push --follow-tags" 
+    "postversion": "npm run publish && git push --follow-tags"
   },
   "repository": {
     "type": "git",
