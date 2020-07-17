@@ -9,18 +9,23 @@ cache:
   directories:
     - node_modules
 
-#运行的脚本命令
-script:
-  - npm run publish:before
+# before_deploy: npm run publish:before
 
 #发布
-deploy:
-  - provider: npm
-    email: kezhongfa@163.com
-    skip_cleanup: true
-    api_key: $NPM_API_KEY
-    local_dir: dist
-    on:
-      tags: true
-      branch: master
-    tag: latest
+# deploy:
+#   - provider: npm
+#     email: kezhongfa@163.com
+#     skip_cleanup: true
+#     api_key: $NPM_API_KEY
+#     on:
+#       tags: true
+#       branch: master
+#     tag: latest
+
+notifications:
+  email:
+    recipients:
+      - 1170212530@qq.com
+      - kezhongfa@163.com
+    on_success: never # default: change
+    on_failure: always # default: always

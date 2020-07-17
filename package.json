@@ -7,11 +7,12 @@
     "node": ">=8.0.0"
   },
   "scripts": {
+    "test":"echo \"Error: no test specified\" && exit 1",
     "publish:before": "node scripts/publish.js",
     "npm:major": "npm version major",
     "npm:minor": "npm version minor",
     "npm:patch": "npm version patch",
-    "postversion": "git push --follow-tags"
+    "postversion": "git push --follow-tags" 
   },
   "repository": {
     "type": "git",
