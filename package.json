@@ -39,6 +39,7 @@
     "conventional-changelog-conventionalcommits": "4.3.0"
   },
   "devDependencies": {
+    "danger": "^10.6.4",
     "shelljs": "^0.8.4"
   }
 }
