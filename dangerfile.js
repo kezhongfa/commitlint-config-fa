@@ -1,4 +1,9 @@
 const {danger, fail} = require('danger');
+
+const jsModifiedFiles = danger.git.modified_files.filter(
+    path => path.startsWith('src') && path.endsWith('js')
+  )
+  
 // Add a CHANGELOG entry for app changes
 const hasChangelog = danger.git.modified_files.includes("changelog.md")
 
@@ -6,7 +11,7 @@ if (!hasChangelog) {
     fail("Please add a changelog entry for your changes.")
 }
 
-if (danger.gitlab.mr.title.includes("WIP")) {
+if (danger.github.pr.title.includes("WIP")) {
     warn("PR is considered WIP")
   }
 
