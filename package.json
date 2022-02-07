@@ -24,6 +24,10 @@
   "peerDependencies": {
     "eslint": ">=6.8.0"
   },
+  "publishConfig": {
+    "registry": "http://81.68.72.219:3001",
+    "access": "public"
+  },
   "author": {
     "name": "kezhongfa",
     "email": "kezhongfa@163.com"
